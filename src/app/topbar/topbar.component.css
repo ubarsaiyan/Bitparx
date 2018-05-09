@@ -1,0 +1,17 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.large-icon {
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+#title-icon {
+  padding-right: 12px;
+}
+
+#user-icon {
+  padding-left: 12px;
+}
