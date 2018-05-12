@@ -1,8 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { MatIconModule, MatToolbarModule, MatButtonModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { MatIconModule, MatToolbarModule, MatButtonModule, MatListModule, MatRadioModule, MatTabsModule,
+  MatCardModule, MatRippleModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
@@ -24,11 +28,18 @@ import { SettingsComponent } from './settings/settings.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    FlexLayoutModule,
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    AppRoutingModule,
+    MatListModule,
+    MatRadioModule,
+    MatTabsModule,
+    MatCardModule,
+    MatRippleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

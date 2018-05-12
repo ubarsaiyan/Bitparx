@@ -1,0 +1,33 @@
+.market-selector {
+  min-width: 100px;
+  overflow-y: auto;
+}
+
+.top-container {
+  height: 350px;
+}
+
+.bottom-container {
+  height: 350px;
+}
+
+.small-icon {
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.gray-text {
+  color: #5f5f5f;
+  font-size: small;
+  margin-bottom: 0 !important; /* for ripple */
+}
+
+.coin-card {
+  margin: 8px;
+}
+
+.coin-card:hover {
+  background: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}

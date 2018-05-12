@@ -11,6 +11,10 @@
   top: 64px;
   bottom: 0px;
   overflow: auto;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  max-width: 1200px;
 }
