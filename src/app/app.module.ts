@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { MatIconModule, MatToolbarModule, MatButtonModule, MatListModule, MatRadioModule, MatTabsModule,
   MatCardModule, MatRippleModule } from '@angular/material';
 
@@ -15,6 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AccountComponent } from './account/account.component';
 import { OrdersComponent } from './orders/orders.component';
 import { SettingsComponent } from './settings/settings.component';
+import { ChartComponent } from './chart/chart.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SettingsComponent } from './settings/settings.component';
     DashboardComponent,
     AccountComponent,
     OrdersComponent,
-    SettingsComponent
+    SettingsComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { SettingsComponent } from './settings/settings.component';
     MatTabsModule,
     MatCardModule,
     MatRippleModule,
+    NgxChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
