@@ -16,11 +16,11 @@ export class ChartComponent implements OnInit {
   gradient = false;
   showLegend = true;
   legendTitle = 'Legend';
-  showXAxisLabel = true;
+  showXAxisLabel = false;
   tooltipDisabled = false;
-  xAxisLabel = 'Country';
+  xAxisLabel = 'Date';
   showYAxisLabel = true;
-  yAxisLabel = 'GDP Per Capita';
+  yAxisLabel = 'Price';
   showGridLines = true;
   animations = true;
   showDataLabel = false;
@@ -28,53 +28,53 @@ export class ChartComponent implements OnInit {
 
   data = [
     {
-      name: 'Germany',
+      name: 'Bitcoin',
       series: [
         {
-          name: '2010',
+          name: '15 May',
           value: 7300000
         },
         {
-          name: '2011',
+          name: '16 May',
           value: 8940000
         },
         {
-          name: '2012',
+          name: '17 May',
           value: 7940000
         }
       ]
     },
     {
-      name: 'USA',
+      name: 'Ethereum',
       series: [
         {
-          name: '2010',
+          name: '15 May',
           value: 7870000
         },
         {
-          name: '2011',
+          name: '16 May',
           value: 8270000
         },
         {
-          name: '2012',
+          name: '17 May',
           value: 8720000
         }
       ]
     },
 
     {
-      name: 'India',
+      name: 'Ripple',
       series: [
         {
-          name: '2010',
+          name: '15 May',
           value: 7800300
         },
         {
-          name: '2011',
+          name: '16 May',
           value: 8200040
         },
         {
-          name: '2012',
+          name: '17 May',
           value: 9200040
         }
       ]

@@ -36,9 +36,14 @@ export class DashboardComponent implements OnInit {
     new Coin ('Ripple', 'XRP', {['BTC']: 1.22, ['ETH']: 2.11}, {['BTC']: 3.22, ['ETH']: 2.33}),
   ];
 
-  selectedCoin: string;
+  selectedCoin: Coin;
+
+  coinSelect(coin: Coin) {
+    this.selectedCoin = coin;
+  }
 
   ngOnInit() {
+    this.selectedCoin = this.coins[0];
   }
 
 }

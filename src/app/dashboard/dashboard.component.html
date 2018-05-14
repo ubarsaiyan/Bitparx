@@ -1,10 +1,10 @@
-<div fxLayout="column" fxLayoutGap="30px">
+<div class="all-container" fxLayout="column" fxLayoutGap="30px">
 
-  <div class="top-container" fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxLayoutGap.gt-xs="50px" fxLayoutAlign="center start">
+  <div class="top-container" fxFlex="60%" fxLayout="row" fxLayout.xs="column" fxLayoutGap.gt-xs="50px" fxLayoutAlign="center start">
 
     <mat-tab-group class="market-selector mat-elevation-z1" fxFill fxLayout="column" fxFlex="30%" fxFlex.xs="40%">
       <mat-tab label="{{market}} Market" *ngFor="let market of markets">
-        <mat-card mat-ripple *ngFor="let coin of coins" class="coin-card" fxLayout="column" fxLayoutGap="5px">
+        <mat-card mat-ripple *ngFor="let coin of coins" (click)="coinSelect(coin)" class="coin-card" fxLayout="column" fxLayoutGap="5px">
           <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="start center">
             <mat-icon class="small-icon">monetization_on</mat-icon>
             <span>{{coin.name}}</span>
@@ -22,13 +22,19 @@
       </mat-tab>
     </mat-tab-group>
 
-    <div class="mat-elevation-z1" fxFill fxFlex="70%" fxFlex.xs="60%">
+    <div fxLayout="column" fxLayoutGap="18px" fxFill fxFlex="70%" fxFlex.xs="60%">
+      <div fxFlex fxLayout="row" fxLayoutGap="10%" fxLayoutAlign="center center" class="button-row">
+        <button mat-raised-button color="accent">Buy {{selectedCoin.name}}</button>
+        <button mat-raised-button color="accent">Sell {{selectedCoin.name}}</button>
+      </div>
+      <div class="mat-elevation-z1" fxFlex="90%">
         <app-chart></app-chart>
+      </div>
     </div>
 
   </div>
 
-  <div class="bottom-container mat-elevation-z1" fxFlex="50%" fxLayout="row" fxLayout.xs="column" fxLayoutGap.gt-xs="50px"
+  <div class="bottom-container mat-elevation-z1" fxFlex="40%" fxLayout="row" fxLayout.xs="column" fxLayoutGap.gt-xs="50px"
     fxLayoutAlign="center start">
     <mat-tab-group fxFlex="50%">
       <mat-tab label="Buy/Sell">Content 1</mat-tab>

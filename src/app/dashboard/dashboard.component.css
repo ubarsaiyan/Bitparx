@@ -1,14 +1,14 @@
+.all-container {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  max-width: 1200px;
+}
+
 .market-selector {
   min-width: 100px;
   overflow-y: auto;
-}
-
-.top-container {
-  height: 350px;
-}
-
-.bottom-container {
-  height: 350px;
 }
 
 .small-icon {
