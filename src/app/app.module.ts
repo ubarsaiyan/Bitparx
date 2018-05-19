@@ -9,13 +9,14 @@ import { MatIconModule, MatToolbarModule, MatButtonModule, MatListModule, MatRad
   MatCardModule, MatRippleModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { TopbarComponent } from './topbar/topbar.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
 import { AppRoutingModule } from './/app-routing.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { AccountComponent } from './account/account.component';
-import { OrdersComponent } from './orders/orders.component';
-import { SettingsComponent } from './settings/settings.component';
-import { ChartComponent } from './chart/chart.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AccountComponent } from './components/account/account.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { ChartComponent } from './components/chart/chart.component';
+import {MarketDataService} from './services/market-data.service';
 
 
 @NgModule({
@@ -44,7 +45,7 @@ import { ChartComponent } from './chart/chart.component';
     MatRippleModule,
     NgxChartsModule,
   ],
-  providers: [],
+  providers: [MarketDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

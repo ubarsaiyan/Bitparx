@@ -28,7 +28,7 @@
         <button mat-raised-button color="accent">Sell {{selectedCoin.name}}</button>
       </div>
       <div class="mat-elevation-z1" fxFlex="90%">
-        <app-chart></app-chart>
+        <app-chart [data]="data" [xAxisLabel]="'Date'" [yAxisLabel]="'Price'"></app-chart>
       </div>
     </div>
 
