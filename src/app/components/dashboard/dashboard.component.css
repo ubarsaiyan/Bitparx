@@ -31,3 +31,12 @@
   background: rgba(0, 0, 0, 0.04);
   cursor: pointer;
 }
+
+.strategy-list {
+  padding: 0 10px;
+  overflow-y: scroll;
+}
+
+.strategy-list-items {
+  padding: 10px;
+}

@@ -34,16 +34,22 @@
 
   </div>
 
-  <div class="bottom-container mat-elevation-z1" fxFlex="40%" fxLayout="row" fxLayout.xs="column" fxLayoutGap.gt-xs="50px"
-    fxLayoutAlign="center start">
-    <mat-tab-group fxFlex="50%">
-      <mat-tab label="Buy/Sell">Content 1</mat-tab>
-      <mat-tab label="Open Orders">Content 2</mat-tab>
-    </mat-tab-group>
-    <mat-tab-group fxFlex="50%">
-      <mat-tab label="Buy">Content 1</mat-tab>
-      <mat-tab label="Sell">Content 2</mat-tab>
-    </mat-tab-group>
-  </div>
-
+  <mat-card class="bottom-container mat-elevation-z1" fxFlex="40%" fxLayout="column" fxLayoutAlign="center stretch">
+    <div class="mat-title">Current Active Strategy Orders</div>
+    <div class="strategy-list" fxFlex fxLayout="column">
+      <div class="strategy-list-items mat-elevation-z1" *ngFor="let coin of coins" fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="space-between center"
+        fxLayoutGap="10px">
+        <div fxLayout="column">
+          <span>{{coin.name}}</span>
+          <span>Bought 11@ 0.09 BTC</span>
+          <span>Strategy - 3% profit OR 4% loss</span>
+        </div>
+        <div fxLayout="row" fxLayoutGap="50px">
+          <button mat-raised-button color="primary">Sell Now</button>
+          <button mat-raised-button color="accent">Cancel Strategy</button>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
 </div>
